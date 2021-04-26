@@ -4,7 +4,7 @@ import math
 
 while True:
 # Radius 
-    R = 300
+    R = 500
     # measuring screen size
     (x,y) = pyautogui.size()
     # locating center of the screen 
