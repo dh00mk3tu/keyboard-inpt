@@ -10,7 +10,7 @@ def type_string_with_delay():
     while True: 
         for character in alphabet_list:
             keyboard.type(random.choice(alphabet_list))
-            delay = randomkb.uniform(0, 2)
+            delay = random.uniform(0, 2)
             time.sleep(.3)
         
         
