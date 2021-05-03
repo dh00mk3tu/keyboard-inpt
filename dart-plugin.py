@@ -1,6 +1,6 @@
 import pyautogui
 import math
-
+import time
 
 while True:
 # Radius 
@@ -13,6 +13,7 @@ while True:
     pyautogui.moveTo(X+R,Y)
 
     for i in range(360):
+        time.sleep(.1)
         # setting pace with a modulus 
         if i%6==0:
             pyautogui.moveTo(X+R*math.cos(math.radians(i)),Y+R*math.sin(math.radians(i)))
