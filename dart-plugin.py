@@ -19,6 +19,7 @@ while True:
     
     for i in range(360):
         time.sleep(random.randint(n, 1))
+        # time.sleep(.5)
         # setting pace with a modulus 
         if i%6==0:
             pyautogui.moveTo(X+R*math.cos(math.radians(i)),Y+R*math.sin(math.radians(i)))
