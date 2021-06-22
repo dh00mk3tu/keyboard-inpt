@@ -7,7 +7,8 @@ pyautogui.FAILSAFE = False
 while True:
 # Radius 
     R = 500
-    n = int(0.9)
+    n = int(0.1)
+    m = int(0.9)
     # measuring screen size
     (x,y) = pyautogui.size()
     # locating center of the screen 
@@ -18,7 +19,8 @@ while True:
     # pyautogui.doubleClick()
     
     for i in range(360):
-        time.sleep(random.randint(n, 1))
+        time.sleep(random.randint(n, m))
+        time.sleep(random.uniform(0.3, 0.8))
         # time.sleep(.5)
         # setting pace with a modulus 
         if i%6==0:
